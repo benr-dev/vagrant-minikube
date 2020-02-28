@@ -2,7 +2,7 @@
 echo "**** Begin downloading minikube"
 
 #Download a static binary
-curl -Los minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+curl -Lso minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 chmod +x minikube
 
 #Add the Minikube executable to your path

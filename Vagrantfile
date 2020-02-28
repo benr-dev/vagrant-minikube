@@ -33,7 +33,12 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", 
       path: "scripts/install-kubectl.sh", 
       args: args
-      
+  
+    args = []
+    config.vm.provision "shell", 
+        path: "scripts/install-k8dashboard.sh", 
+        args: args
+            
   end
 
 end
